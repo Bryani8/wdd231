@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course home page for Bryan Morocho - WDD 231">
+    <meta name="author" content="Bryan Morocho">
+    <title>Bryan Morocho | Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/flag-ecuador.svg" alt="ecuador's flag">
+        <span>Ecuador</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>I earum corporis quod, doloribus aliquid sunt? Nostrum soluta explicabo, ut sed veritatis asperiores laboriosam neque porro. Ducimus, earum praesentium nostrum corporis vel corrupti neque maxime quaerat officia eius in explicabo laudantium molestiae nisi quas magnam ipsam illum ut quasi, dolores, accusantium impedit porro asperiores dolor! Omnis dolores accusamus delectus tenetur voluptates quisquam sed eum ab labore.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Bryan Morocho's photo">
+        </section>
+
+        <section id="cert-section" class="cetificate-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all-courses">All</button>
+                <button id="wdd-courses">WDD</button>
+                <button id="cse-courses">CSE</button>
+            </div>
+            <div id="courses-cards" class="course-grid"></div>
+            <p class="total-credits">Total Credits Required: <span id="credits">0</span></p>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github_icon.svg" alt="github" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/linkedin_icon.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/whatsapp_icon.svg" alt="whatsapp" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> | Bryan Morocho | Ecuador</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

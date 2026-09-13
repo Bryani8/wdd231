@@ -1,0 +1,79 @@
+[
+  {
+    "companyName": "Andean Brews & Beans",
+    "companyAddress": "Av. República de El Salvador N34-124 y Suecia, Quito 170135",
+    "companyPhoneNumber": "+593 2 398 4000",
+    "companyWebsiteUrl": "https://www.andeanbrews.ec",
+    "imageFileName": "../images/Coffe_Shop.webp",
+    "membershipLevel": 3,
+    "industry": "Specialty Coffee Shop",
+    "foundedYear": 2018,
+    "featuredSpecialty": "Single-origin Pichincha organic espresso"
+  },
+  {
+    "companyName": "Mitad del Mundo Tech Solutions",
+    "companyAddress": "Calle Guayaquil N12-45 y Chile, Centro Histórico, Quito 170150",
+    "companyPhoneNumber": "+593 2 295 1122",
+    "companyWebsiteUrl": "https://www.mitadtech.com",
+    "imageFileName": "../images/Software_Development.webp",
+    "membershipLevel": 2,
+    "industry": "Software Development",
+    "foundedYear": 2021,
+    "featuredSpecialty": "Cloud migration and data analytics"
+  },
+  {
+    "companyName": "Pichincha Artisan Chocolates",
+    "companyAddress": "Av. 6 de Diciembre N23-40 y Wilson, Quito 170143",
+    "companyPhoneNumber": "+593 2 254 7890",
+    "companyWebsiteUrl": "https://www.pichinchachocs.ec",
+    "imageFileName": "../images/Chocolate_Retail.webp",
+    "membershipLevel": 1,
+    "industry": "Confectionery & Retail",
+    "foundedYear": 2020,
+    "featuredSpecialty": "70% Nacional cacao bars with Andean sea salt"
+  },
+  {
+    "companyName": "Condor Eco-Tours Ecuador",
+    "companyAddress": "Calle Mariscal Foch E7-81 y Juan León Mera, La Mariscal, Quito 170143",
+    "companyPhoneNumber": "+593 2 255 3300",
+    "companyWebsiteUrl": "https://www.condorecotours.com",
+    "imageFileName": "../images/Condor_Tours.webp",
+    "membershipLevel": 3,
+    "industry": "Tourism & Travel",
+    "foundedYear": 2015,
+    "featuredSpecialty": "Guided day trips to Cotopaxi and Antisana"
+  },
+  {
+    "companyName": "Quitus Textil & Design",
+    "companyAddress": "Panamericana Norte Km 8.5, Carcelén Industrial, Quito 170802",
+    "companyPhoneNumber": "+593 2 802 1144",
+    "companyWebsiteUrl": "https://www.quitustextil.ec",
+    "imageFileName": "../images/Quitus_Manufacturing.webp",
+    "membershipLevel": 2,
+    "industry": "Apparel Manufacturing",
+    "foundedYear": 2012,
+    "featuredSpecialty": "Alpaca wool blend sweaters and ponchos"
+  },
+  {
+    "companyName": "Panecillo Digital Marketing",
+    "companyAddress": "Av. Amazonas N24-210 y Colón, Quito 170102",
+    "companyPhoneNumber": "+593 2 382 6655",
+    "companyWebsiteUrl": "https://www.panecillodigital.com",
+    "imageFileName": "../images/Marketing_Agency.webp",
+    "membershipLevel": 1,
+    "industry": "Marketing Agency",
+    "foundedYear": 2023,
+    "featuredSpecialty": "SEO and social media growth for local businesses"
+  },
+  {
+    "companyName": "Guayllabamba Botanical Nursery",
+    "companyAddress": "Via Interoceánica Km 24, Tumbaco, Quito 170902",
+    "companyPhoneNumber": "+593 2 237 0099",
+    "companyWebsiteUrl": "https://www.guayllabambaplants.ec",
+    "imageFileName": "../images/Guayllabamba_Agriculture.webp",
+    "membershipLevel": 2,
+    "industry": "Agriculture & Landscaping",
+    "foundedYear": 2017,
+    "featuredSpecialty": "Native Ecuadorian flora and ornamental trees"
+  }
+]

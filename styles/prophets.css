@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: "PT+Sans", sans-serif;
+    color: var(--color-primary);
+}
+
+body {
+    /* background-color: #3e6084; */
+    background-color: #0f172a;
+}
+
+h1 {
+    color: #cbd5e1;
+    text-align: center;
+}
+
+.container-cards {
+    border: 1px solid #cbd5e1;
+    padding: .5rem;
+    margin: .4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section {
+    padding: .5rem;
+    margin: .5rem;
+    text-align: center;
+    border: 2px solid #cbd5e1;
+    /* background-color: #ebca65; */
+    background-color: #f9f6f0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: .5rem auto;
+}
+
+footer {
+    color: #cbd5e1;
+    padding: 2rem;
+    text-align: center;
+}

@@ -37,7 +37,7 @@ function displayCompanies(companyList) {
 
         section.innerHTML = `
             <h3>${company.companyName}</h3>
-            <img src="images/${company.imageFileName}" alt="${company.companyName}" loading="lazy">
+            <img src="${company.imageFileName}" alt="${company.companyName}" loading="lazy">
             <div class="info-container">
                 <p>${company.companyPhoneNumber}</p>
                 <p>${company.companyWebsiteUrl}</p>

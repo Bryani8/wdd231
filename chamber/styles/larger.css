@@ -1,3 +1,56 @@
+/* @media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0;
+        background: transparent;
+    }
+
+    .home-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "current weather"
+            "spotlight spotlight";
+    }
+
+    .current-events {grid-area: current;}
+    .weather-section {grid-area: weather;}
+    .spotlights-card {grid-area: spotlight;}
+
+    .spotlight-container {
+        display: flex;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
+
 @media only screen and (min-width: 38rem) {
     header, main, nav, footer {
         max-width: 1100px;
@@ -27,8 +80,49 @@
         background: transparent;
     }
 
+    /* Home Panel Grid Layout */
+    .home-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        grid-template-areas: 
+            "current weather"
+            "spotlight spotlight";
+    }
+
+    .current-events { 
+        grid-area: current; 
+    }
+    
+    .weather-section { 
+        grid-area: weather; 
+    }
+    
+    .spotlights-card { 
+        grid-area: spotlight; 
+    }
+
+    /* Make spotlight cards sit side-by-side inside the full-width bottom container */
+    .spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    footer div {
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .social-media {
+        justify-content: flex-start;
     }
 }

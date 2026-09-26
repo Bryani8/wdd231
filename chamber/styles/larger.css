@@ -109,6 +109,12 @@
         gap: 1.5rem;
     }
 
+    .join-panel {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2.5rem;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

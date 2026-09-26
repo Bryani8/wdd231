@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LlaKTa | Join</title>
+    <meta name="description" content="Welcome to Llakta, a chamber of commerce in Quito, Ecuador. Discover what you need and join this amazing team.">
+    <meta name="author" content="Bryan Morocho">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/llakta_logo.svg" alt="Llakta company logo" width="20" height="20">
+            <span>Llakta</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="join-panel">
+            <section class="membership-application">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="get" class="member-form">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" name="fname" autocomplete="given-name" title="Type your first name" required>
+
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" name="lname" autocomplete="family-name" title="Type your last name" required>
+
+                        <label for="organization">Organization Title</label>
+                        <input type="text" id="organization" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters.">
+
+                        <label for="e-mail">Email*</label>
+                        <input type="email" id="e-mail" name="email" autocomplete="email" placeholder="example@yourdomain.com" title="Type your email" required>
+
+                        <label for="phone-number">Phone Number*</label>
+                        <input type="tel" id="phone-number" name="phone" autocomplete="tel" title="Type your mobile phone number" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Business Data</legend>
+
+                        <label for="business-name">Business Name*</label>
+                        <input type="text" id="business-name" name="bname" autocomplete="organization" title="Type your business name" required>
+
+                        <label for="membership-level">Membership Level*</label>
+                        <select name="Membershiplevel" id="membership-level" required>
+                            <option value="" disabled selected>Choose an option...</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+
+                        <label for="description">Business Description</label>
+                        <textarea id="description" name="description" title="Type a description of your business"></textarea>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+                    </fieldset>
+
+                    <input type="submit" value="Join the Chamber">
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Tiers</h2>
+
+                <div class="membership-card">
+                    <h3>NP Membership</h3>
+                    <button type="button" class="open-modal" data-modal="modal-np">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <button type="button" class="open-modal" data-modal="modal-bronze">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <button type="button" class="open-modal" data-modal="modal-silver">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <button type="button" class="open-modal" data-modal="modal-gold">Learn More</button>
+                </div>
+            </section>
+
+            <!-- Dialog / Modal Elements -->
+            <dialog id="modal-np">
+                <button class="close-modal" aria-label="Close dialog">&times;</button>
+                <h3>NP Membership Benefits</h3>
+                <p>Designed for Non-Profit organizations. No fee required. Includes directory listing and access to community networking events.</p>
+            </dialog>
+
+            <dialog id="modal-bronze">
+                <button class="close-modal" aria-label="Close dialog">&times;</button>
+                <h3>Bronze Membership Benefits</h3>
+                <p>Ideal for small businesses and startups. Provides standard directory listing, event discounts, and quarterly newsletters.</p>
+            </dialog>
+
+            <dialog id="modal-silver">
+                <button class="close-modal" aria-label="Close dialog">&times;</button>
+                <h3>Silver Membership Benefits</h3>
+                <p>Includes all Bronze features plus home page spotlight advertising eligibility, training workshop access, and priority event seating.</p>
+            </dialog>
+
+            <dialog id="modal-gold">
+                <button class="close-modal" aria-label="Close dialog">&times;</button>
+                <h3>Gold Membership Benefits</h3>
+                <p>Our premium package. Includes permanent home page spotlight placements, full event sponsorship opportunities, and dedicated account management.</p>
+            </dialog>
+        </div> 
+    </main>
+    <footer>
+        <div class="info-company">
+            <p>LlaKTa</p>
+            <p>Calderón</p>
+            <p>Quito</p>
+            <p>bryanmorochoi8@outlook.es</p>
+            <p>(593) 99 600 9440</p>
+        </div>
+        <div class="social-media">
+             <a href="https://github.com/Bryani8/wdd231" target="_blank"><img src="images/github_icon.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/bryan-morocho-05170b19b/" target="_blank"><img src="images/linkedin_icon.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp_icon.svg" alt="whatsapp" width="16" height="16"></a>
+        </div>
+        <div class="info-development">
+            <p>WDD231 Class Project</p>
+            <p>Bryan Morocho</p>
+            <p>&copy; <span id="currentYear"></span>LlaKTa</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

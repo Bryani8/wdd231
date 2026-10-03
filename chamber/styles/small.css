@@ -606,6 +606,10 @@ dialog #closeModal {
     color: var(--bg-main);
 }
 
+.cards-grid {
+  min-height: 800px;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr;

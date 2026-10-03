@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LlaKTa | Thank You</title>
-    <meta name="description" content="Confirmation page for chamber of commerce membership application.">
+    <title>LlaKTa Chamber of Commerce | Discover</title>
+    <meta name="description" content="Discover points of interest in Quito, Ecuador, featuring historic sites, parks, and landmarks.">
+    <meta name="author" content="Bryan Morocho">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/thankyou.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -22,44 +26,17 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li class="current"><a href="#">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="thankyou-panel">
-            <h1>Thank You for Joining!</h1>
-            <p>We have successfully received your membership application. Below are the details you submitted:</p>
-
-            <div class="submission-details">
-                <h2>Submitted Application Details</h2>
-                <dl>
-                    <dt>First Name:</dt>
-                    <dd id="display-fname">Loading...</dd>
-
-                    <dt>Last Name:</dt>
-                    <dd id="display-lname">Loading...</dd>
-
-                    <dt>Email Address:</dt>
-                    <dd id="display-email">Loading...</dd>
-
-                    <dt>Mobile Phone:</dt>
-                    <dd id="display-phone">Loading...</dd>
-
-                    <dt>Business / Organization Name:</dt>
-                    <dd id="display-organization">Loading...</dd>
-
-                    <dt>Submission Timestamp:</dt>
-                    <dd id="display-timestamp">Loading...</dd>
-                </dl>
-            </div>
-
-            <a href="index.html" class="btn-home">Return to Home</a>
+        <h1>Discover Quito</h1>
+        <aside id="visitor-message" class="visitor-banner"></aside>
+        <section class="cards-grid">
         </section>
     </main>
-
     <footer>
         <div class="info-company">
             <p>LlaKTa</p>

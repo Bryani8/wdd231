@@ -51,7 +51,7 @@
     }
 } */
 
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
     header, main, nav, footer {
         max-width: 1100px;
         margin: 0 auto;
@@ -113,6 +113,31 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2.5rem;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "image"
+        "address"
+        "description"
+        "action";
+    }
+
+    .card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .card figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1) contrast(1.05);
     }
 
     footer {

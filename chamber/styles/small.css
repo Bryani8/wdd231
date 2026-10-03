@@ -598,6 +598,41 @@ dialog #closeModal {
     background-color: var(--accent-hover);
 }
 
+.visitor-banner {
+    border: 1px solid var(--border-color);
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--bg-main);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "title"
+    "image"
+    "address"
+    "description"
+    "action";
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 1rem;
+}
+
+.card h2 { grid-area: title; text-align: center;}
+.card figure { grid-area: image; }
+.card address { grid-area: address; }
+.card p { grid-area: description; }
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
 /* Footer Styling */
 footer {
     display: block;

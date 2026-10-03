@@ -1,0 +1,11 @@
+@media screen and (min-width: 38rem) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "image title"
+      "image description"
+      "image address"
+      "image action";
+    gap: 1rem 1.5rem;
+  }
+}

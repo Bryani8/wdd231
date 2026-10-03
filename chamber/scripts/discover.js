@@ -11,7 +11,7 @@ function displayCards(items) {
     card.innerHTML = `
       <h2>${item.name}</h2>
       <figure>
-        <img src="${item.image}" alt="${item.name}" loading="lazy" width="300" height="200">
+        <img src="${item.image}" alt="${item.name}" width="300" height="200">
       </figure>
       <address>${item.address}</address>
       <p>${item.description}</p>

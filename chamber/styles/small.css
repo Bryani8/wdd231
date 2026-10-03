@@ -631,6 +631,7 @@ dialog #closeModal {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  aspect-ratio: 3 / 2;
 }
 
 /* Footer Styling */

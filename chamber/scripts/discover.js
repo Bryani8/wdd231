@@ -6,12 +6,14 @@ function displayCards(items) {
   cardsGrid.innerHTML = "";
   items.forEach((item, index) => {
     const card = document.createElement("div");
-    card.classList.add(`card`, `card-${index + 1}`);
+    card.classList.add("card");
+
+    const loadingAttr = index === 0 ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
 
     card.innerHTML = `
       <h2>${item.name}</h2>
       <figure>
-        <img src="${item.image}" alt="${item.name}" width="300" height="200">
+        <img src="${item.image}" alt="${item.name}" ${loadingAttr} width="300" height="200">
       </figure>
       <address>${item.address}</address>
       <p>${item.description}</p>

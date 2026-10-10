@@ -183,7 +183,7 @@ header .logo span {
 
 .sound-desc {
     font-size: 0.8rem;
-    color: #666;
+    color: black;
     margin: 0;
 }
 /* ==========================================================================
@@ -372,7 +372,7 @@ footer p {
 
 .sound-directory-info .desc {
     font-size: 0.9rem;
-    color: #666;
+    color: black;
     margin: 0.4rem 0 0.8rem 0;
 }
 

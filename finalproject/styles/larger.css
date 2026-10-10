@@ -1,0 +1,111 @@
+@media only screen and (min-width: 32rem) {
+    header, main, nav, footer {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* Desktop Header Adjustments */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        background: transparent;
+    }
+
+    .navigation li.current a {
+        color: #FFFFFF;
+        background-color: var(--primary);
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation a:hover {
+        border-radius: 4px;
+    }
+
+    /* ==========================================================================
+       Desktop Home Layout (CSS Grid)
+       ========================================================================== */
+    .home-main {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    /* Searcher spans across the top of both columns */
+    .search-section {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    .search-section input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+    }
+
+    /* Left Sidebar: Random Soundscapes list takes up vertical space */
+    .random-sounds-container {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    /* Right Side Top: Hero Image Section */
+    .hero-image-section {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* Right Side Bottom Grid: Music Menu and Playlist side-by-side */
+    .right-bottom-grid {
+        grid-column: 2;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .music-menu-section {
+        grid-column: 1;
+    }
+
+    .playlist-section {
+        grid-column: 2;
+    }
+
+    /* Desktop Footer Layout */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .social-media {
+        justify-content: flex-start;
+    }
+
+    .directory-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

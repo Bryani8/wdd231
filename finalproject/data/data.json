@@ -1,0 +1,137 @@
+[
+  {
+    "id": "forest-01",
+    "name": "Morning Woodland Birds",
+    "category": "Forest",
+    "duration": "11:20",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486894_9872712-hq.mp3",
+    "imageUrl": "images/morning_woodland_birds.webp",
+    "description": "Early morning songbirds chirping peacefully in an open oak canopy for natural focus."
+  },
+  {
+    "id": "forest-02",
+    "name": "Mirador Montbau Forest Ambiance",
+    "category": "Forest",
+    "duration": "08:15",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486893_9872712-hq.mp3",
+    "imageUrl": "images/mirador_montbau_forest_ambiance.webp",
+    "description": "Crisp woodland air and gentle rustling leaves creating a peaceful background atmosphere."
+  },
+  {
+    "id": "forest-03",
+    "name": "Mirador Horta Woodland Breeze",
+    "category": "Forest",
+    "duration": "11:10",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486891_9872712-hq.mp3",
+    "imageUrl": "images/mirador_horta_woodland_breeze.webp",
+    "description": "Quiet outdoor forest environment featuring subtle crickets and soft wind gusts."
+  },
+  {
+    "id": "ocean-01",
+    "name": "Ocean Waves Tide",
+    "category": "Ocean",
+    "duration": "10:15",
+    "audioUrl": "https://cdn.freesound.org/previews/58/58416_700192-hq.mp3",
+    "imageUrl": "images/ocean_waves_tide.webp",
+    "description": "Rhythmic ocean waves gently lapping against a calm shoreline to promote deep sleep."
+  },
+  {
+    "id": "ocean-02",
+    "name": "Miami Beach Coastal Shore",
+    "category": "Ocean",
+    "duration": "08:40",
+    "audioUrl": "https://cdn.freesound.org/previews/161/161697_43-hq.mp3",
+    "imageUrl": "images/miami_beach_coastal_shore.webp",
+    "description": "Soothing sea surf and gentle wave breaks recorded live along coastal sand dunes."
+  },
+  {
+    "id": "ocean-03",
+    "name": "Pacific Ocean Waves",
+    "category": "Ocean",
+    "duration": "12:00",
+    "audioUrl": "https://cdn.freesound.org/previews/174/174763_7037-hq.mp3",
+    "imageUrl": "images/pacific_ocean_waves.webp",
+    "description": "Authentic Pacific water splashes providing natural masking against background noise."
+  },
+  {
+    "id": "ocean-04",
+    "name": "Deep Ocean Dark Ambience",
+    "category": "Ocean",
+    "duration": "15:30",
+    "audioUrl": "https://cdn.freesound.org/previews/867/867644_15636277-hq.mp3",
+    "imageUrl": "images/deep_ocean_dark_ambience.webp",
+    "description": "Low-frequency deep sea undertow rumble ideal for meditation and anxiety relief."
+  },
+  {
+    "id": "ocean-05",
+    "name": "Atlantic Ocean Crashing Waves",
+    "category": "Ocean",
+    "duration": "14:20",
+    "audioUrl": "https://cdn.freesound.org/previews/197/197714_7037-hq.mp3",
+    "imageUrl": "images/atlantic_ocean_crashing_waves.webp",
+    "description": "Steady Atlantic tidal flows providing restorative geophony for relaxation."
+  },
+  {
+    "id": "mountain-01",
+    "name": "Mirador Torrebaro Mountain Outdoor",
+    "category": "Mountain",
+    "duration": "09:50",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486894_9872712-hq.mp3",
+    "imageUrl": "images/mirador_torrebaro_mountain_outdoor.webp",
+    "description": "High-altitude solitary ridge winds accompanied by distant woodland crickets."
+  },
+  {
+    "id": "mountain-02",
+    "name": "Alpine Ridge Wind",
+    "category": "Mountain",
+    "duration": "14:10",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486893_9872712-hq.mp3",
+    "imageUrl": "images/alpine_ridge_wind.webp",
+    "description": "High-altitude solitary breeze across serene rocky mountain peaks."
+  },
+  {
+    "id": "mountain-03",
+    "name": "Glacier Stream Cascade",
+    "category": "Mountain",
+    "duration": "10:50",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486891_9872712-hq.mp3",
+    "imageUrl": "images/glacier_stream_cascade.webp",
+    "description": "Cold, clear freshwater rushing over smooth river stones in the highlands."
+  },
+  {
+    "id": "rain-01",
+    "name": "Creek Running by Ocean Shore",
+    "category": "Rain",
+    "duration": "07:45",
+    "audioUrl": "https://cdn.freesound.org/previews/476/476447_8644110-hq.mp3",
+    "imageUrl": "images/creek_runnin_by_ocean_shore.webp",
+    "description": "Steady running water stream blending delicate splashing with distant shore rainfall."
+  },
+  {
+    "id": "rain-02",
+    "name": "Gentle Water Splashing Rocks",
+    "category": "Rain",
+    "duration": "06:30",
+    "audioUrl": "https://cdn.freesound.org/previews/550/550915_6667441-hq.mp3",
+    "imageUrl": "images/gentle_water_plashing_rocks.webp",
+    "description": "Rhythmic freshwater trickling smoothly across small river rocks."
+  },
+  {
+    "id": "forest-04",
+    "name": "Campfire Crackle",
+    "category": "Forest",
+    "duration": "18:20",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486894_9872712-hq.mp3",
+    "imageUrl": "images/campfire_crackle.webp",
+    "description": "Warm wood logs crackling gently in a quiet woodland evening."
+  },
+  {
+    "id": "mountain-04",
+    "name": "Pine Valley Eco Night",
+    "category": "Mountain",
+    "duration": "16:45",
+    "audioUrl": "https://cdn.freesound.org/previews/486/486891_9872712-hq.mp3",
+    "imageUrl": "images/pine_valley_eco_night.webp",
+    "description": "Night crickets chirping beneath quiet mountain starlight."
+  }
+]

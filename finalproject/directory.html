@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and filter the EcoSound Library catalog of ambient rain, ocean, forest, and mountain soundscapes.">
+    <meta name="author" content="Bryan Morocho">
+    <title>EcoSound Library - Directory</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="EcoSound company logo" width="24" height="24">
+            <span>EcoSound</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="directory-main">
+        <h1>Ambient Sound Directory</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Rain">Rain</button>
+            <button class="filter-btn" data-filter="Ocean">Ocean</button>
+            <button class="filter-btn" data-filter="Forest">Forest</button>
+            <button class="filter-btn" data-filter="Mountain">Mountain</button>
+        </div>
+
+        <!-- Sound Cards Grid -->
+        <div id="directory-grid" class="directory-grid">
+            <!-- Dynamic cards will load here -->
+        </div>
+    </main>
+
+    <!-- Modal Dialog Requirement -->
+    <dialog id="sound-modal">
+        <h3 id="modal-title"></h3>
+        <div id="modal-body" style="margin: 1rem 0;"></div>
+        <button class="btn" id="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="info-company">
+            <p><strong>EcoSound Library</strong></p>
+            <p>Quito, Ecuador</p>
+            <p>contact@ecosoundlibrary.org</p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Bryani8/wdd231" target="_blank" aria-label="GitHub Repository">
+                <img src="images/github_icon.svg" alt="GitHub icon" width="20" height="20">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="images/linkedin_icon.svg" alt="LinkedIn icon" width="20" height="20">
+            </a>
+        </div>
+        <div class="info-development">
+            <p>WDD231 Final Project</p>
+            <p>Bryan Morocho</p>
+            <p>&copy; <span id="currentYear"></span> EcoSound Library</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>

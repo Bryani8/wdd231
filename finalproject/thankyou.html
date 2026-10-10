@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for joining EcoSound Library.">
+    <meta name="author" content="Bryan Morocho">
+    <title>EcoSound Library | Welcome</title>
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/footer.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="EcoSound company logo" width="24" height="24">
+            <span>EcoSound</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Welcome to EcoSound Library!</h1>
+        <p class="join-intro">Your registration was successful. Here is the information you submitted:</p>
+        
+        <div id="results" class="results-card">
+            <!-- Populated via JavaScript URL parameters -->
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+            <a href="index.html" class="cat-btn" style="display: inline-block; text-align: center;">Return to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info-company">
+            <p><strong>EcoSound Library</strong></p>
+            <p>Quito, Ecuador</p>
+            <p>contact@ecosoundlibrary.org</p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Bryani8/wdd231" target="_blank" aria-label="GitHub Repository">
+                <img src="images/github_icon.svg" alt="GitHub icon" width="20" height="20">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="images/linkedin_icon.svg" alt="LinkedIn icon" width="20" height="20">
+            </a>
+        </div>
+        <div class="info-development">
+            <p>WDD231 Final Project</p>
+            <p>Bryan Morocho</p>
+            <p>&copy; <span id="currentYear"></span> EcoSound Library</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        const currentUrl = window.location.href;
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsContainer = document.querySelector('#results');
+
+        if (resultsContainer) {
+            const fname = urlParams.get('fname') || 'N/A';
+            const lname = urlParams.get('lname') || 'N/A';
+            const email = urlParams.get('email') || 'N/A';
+            const phone = urlParams.get('phone') || 'N/A';
+            const membership = urlParams.get('membership') || 'Free';
+            const timestamp = urlParams.get('timestamp') || 'N/A';
+
+            resultsContainer.innerHTML = `
+                <p><strong>Name:</strong> ${fname} ${lname}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Membership Tier:</strong> ${membership.toUpperCase()}</p>
+                <p><strong>Registered On:</strong> ${new Date(timestamp).toLocaleString()}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

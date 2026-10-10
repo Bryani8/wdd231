@@ -1,8 +1,15 @@
 import { updateFooterInfo, setupNavigation } from './utils.js';
-
 document.addEventListener("DOMContentLoaded", async () => {
     updateFooterInfo();
     setupNavigation();
+    const navbutton = document.querySelector('#ham-btn');
+    const navBar = document.querySelector('#nav-bar');
+    if (navbutton && navBar) {
+        navbutton.addEventListener('click', () => {
+            navbutton.classList.toggle('show');
+            navBar.classList.toggle('show');
+        });
+    }
 
     try {
         const response = await fetch('./data/data.json');

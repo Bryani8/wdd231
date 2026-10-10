@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32rem) {
+@media only screen and (min-width: 890px) {
     header, main, nav, footer {
         max-width: 1100px;
         margin: 0 auto;
@@ -49,6 +49,13 @@
         grid-template-rows: auto auto auto;
         gap: 1.5rem;
         padding: 2rem 0;
+    }
+
+
+
+    .hero-image-section img {
+        width: 100%;
+        height: auto;
     }
 
     /* Searcher spans across the top of both columns */

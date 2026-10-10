@@ -1,4 +1,7 @@
+import { updateFooterInfo, setupNavigation } from './utils.js';
 document.addEventListener("DOMContentLoaded", async () => {
+    updateFooterInfo();
+    setupNavigation();
     const gridContainer = document.querySelector('#directory-grid');
     const filterButtons = document.querySelectorAll('.filter-btn');
     const modal = document.querySelector('#sound-modal');
